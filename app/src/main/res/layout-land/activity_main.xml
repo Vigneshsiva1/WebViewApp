@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1px"
+    android:paddingLeft="1px"
+    android:paddingRight="1px"
+    android:paddingTop="1px"
+    tools:context="e.vigne.webviewapp.MainActivity"
+    android:background="#ff000000">
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@android:color/background_dark"
+        android:layout_marginEnd="43dp"
+        android:layout_alignTop="@+id/webView2"
+        android:layout_alignParentEnd="true">
+
+    </WebView>
+
+    <WebView
+        android:id="@+id/webView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_dark"
+        android:foreground="@android:color/transparent"
+        tools:foreground="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp">
+
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/webView1"
+        android:layout_alignTop="@+id/progressBar2"
+        android:layout_marginStart="72dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        tools:progressBackgroundTint="@color/colorAccent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/webView2"
+        android:layout_below="@+id/webView2"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        tools:progressBackgroundTint="@color/colorAccent" />
+
+
+</RelativeLayout>
